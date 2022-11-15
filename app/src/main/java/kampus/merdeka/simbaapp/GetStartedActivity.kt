@@ -15,8 +15,6 @@ class GetStartedActivity : AppCompatActivity() {
         firstActButton.setOnClickListener {
             val Intent = Intent(this,LoginActivity::class.java)
             startActivity(Intent)
-
-            // Farizal burik
         }
     }
 }
