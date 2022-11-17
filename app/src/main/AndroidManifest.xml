@@ -21,6 +21,9 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".GetStartedActivity"
             android:exported="false" />
         <activity
