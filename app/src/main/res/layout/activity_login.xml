@@ -10,6 +10,7 @@
     android:padding="16dp">
 
     <ImageView
+        android:id="@+id/backlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
@@ -40,17 +41,18 @@
             android:textSize="14dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="45dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:padding="16dp"
             android:background="@drawable/white_button"
-            android:text="Simba@gmail.com"
-            android:textColor="@color/hint"/>
+            android:hint="Simba@gmail.com"
+            android:padding="16dp"
+            android:textColor="@color/hint" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +71,7 @@
             android:layout_marginRight="16dp"
             android:padding="16dp"
             android:background="@drawable/white_button"
-            android:text="min. 8 karakter"
+            android:hint="min. 8 karakter"
             android:textColor="@color/hint"/>
 
         <TextView
@@ -85,7 +87,7 @@
             android:layout_marginTop="20dp"/>
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -119,6 +121,7 @@
                 android:text="Register"
                 android:fontFamily="@font/opensansbold"
                 android:textColor="@color/pink"
+                android:layout_marginStart="5dp"
                 android:textSize="12dp"/>
         </LinearLayout>
 
