@@ -17,7 +17,7 @@
         android:theme="@style/Theme.SimbaAPP"
         tools:targetApi="31">
         <activity
-            android:name=".BuatPasswordBaruActivity"
+            android:name=".JadwalImunisasiActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,15 +26,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VerifikasiOTPActivity"
+            android:name=".InfoImunisasiActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".LupaPasswordActivity"
-            android:exported="true">
-
+            android:name=".ArtikelImunisaiActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".BuatPasswordBaruActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VerifikasiOTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LupaPasswordActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,7 +57,7 @@
             android:label="@string/title_activity_maps" />
         <activity
             android:name=".InputDataAnak2Activity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".InputDataAnakActivity"
             android:exported="false">
@@ -69,7 +80,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
+            android:exported="true"></activity>
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
