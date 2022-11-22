@@ -3,6 +3,12 @@ package kampus.merdeka.simbaapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import kampus.merdeka.simbaapp.Fragment.ChatFragment
+import kampus.merdeka.simbaapp.Fragment.HomeFragment
+import kampus.merdeka.simbaapp.Fragment.LocationFragment
+import kampus.merdeka.simbaapp.Fragment.ProfileFragment
 import kampus.merdeka.simbaapp.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
