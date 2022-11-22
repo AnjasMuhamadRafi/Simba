@@ -3,91 +3,81 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/pink_background"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    android:background="@drawable/pink_background"
+    android:orientation="vertical"
+    tools:context=".InputDataAnak2Activity">
 
 
 
     <ScrollView
-        android:id="@+id/scrollView_daftar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintVertical_bias="0.5">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_datainp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Data Anak"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginStart="16dp"
-                    app:srcCompat="@drawable/ic_back" />
 
                 <TextView
-                    android:id="@+id/tv_daftar"
+                    android:id="@+id/tv_anakke1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="104dp"
-                    android:fontFamily="@font/opensansbold"
-                    android:text="Daftar"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="Anak ke-1"
                     android:textColor="@color/black"
-                    android:textSize="24sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:textColor="@color/pink"
+                    android:text="*" />
 
 
             </LinearLayout>
 
 
+
             <TextView
-                android:id="@+id/tv_email"
+                android:id="@+id/tv_namalkp2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/opensansregular"
-                android:text="Email"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/edit_nama"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/white_button"
-                android:ems="10"
-                android:fontFamily="@font/opensansregular"
-                android:hint="Email"
-                android:padding="16dp" />
-
-            <TextView
-                android:id="@+id/tv_namalengkap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/opensansregular"
                 android:text="Nama Lengkap"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <EditText
-                android:id="@+id/edit_namalengkap"
+                android:id="@+id/edit_namalkp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -100,18 +90,18 @@
                 android:padding="16dp" />
 
             <TextView
-                android:id="@+id/tv_nomorhp"
+                android:id="@+id/tv_ttl2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="No. Handphone"
+                android:text="Tanggal lahir"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <EditText
-                android:id="@+id/edit_nomorhandphone"
+                android:id="@+id/edit_ttl2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -119,65 +109,18 @@
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/white_button"
                 android:ems="10"
-                android:hint="Ex. 081234567890"
-                android:inputType="phone"
+                android:hint="dd / mm / yyyy"
+                android:inputType="date"
                 android:padding="16dp" />
 
             <TextView
-                android:id="@+id/tv_Password"
+                android:id="@+id/tv_riwayat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="Password"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/edit_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/white_button"
-                android:ems="10"
-                android:hint="min. 8 karakter"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
-
-            <TextView
-                android:id="@+id/tv_konfirmasipasword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/opensansregular"
-                android:text="Konfirmasi Password"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/edit_konfirmasipasword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/white_button"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="16dp" />
-
-            <TextView
-                android:id="@+id/tv_role"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/opensansregular"
-                android:text="Role"
+                android:text="Riwayat imunisasi"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -187,7 +130,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="3dp"
-                android:hint="Pilih Role"
+                android:background="@drawable/white_button"
+                android:hint="Belum Pernah"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
                 <AutoCompleteTextView
@@ -198,96 +142,121 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
+            <TextView
+                android:id="@+id/tv_anakke2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Anak ke-2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_namalkp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Nama Lengkap"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
             <EditText
-                android:id="@+id/edit_role"
+                android:id="@+id/edit_namalkp3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="16dp"
-                android:visibility="gone"
                 android:background="@drawable/white_button"
                 android:ems="10"
+                android:hint="Nama"
                 android:inputType="textPersonName"
                 android:padding="16dp" />
 
-            <Button
-                android:id="@+id/bt_register11"
+            <TextView
+                android:id="@+id/tv_ttl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Tanggal lahir"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_ttl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_button"
+                android:ems="10"
+                android:hint="dd / mm / yyyy"
+                android:inputType="date"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/tv_riwayat22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Riwayat imunisasi"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/white_button"
+                android:hint="Belum Pernah"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_field2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/bt_submit22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/pink_button"
-                android:text="Register"
+                android:text="Submit"
                 android:textColor="@color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:background="@drawable/white_button"
-                android:padding="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="71dp"
-                    android:fontFamily="@font/opensansregular"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:text="Register dengan " />
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:srcCompat="@drawable/logo_google" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:textSize="14sp"
-                    android:text="Google" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
+            <Button
+                android:id="@+id/bt_submit2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_sudahpuyaakun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="119dp"
-                    android:layout_marginBottom="18dp"
-                    android:textSize="12sp"
-                    android:text="Sudah punya akun?"/>
-
-                <TextView
-                    android:id="@+id/tv_login"
-                    android:layout_width="72dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="@font/opensansregular"
-                    android:textColor="@color/pink"
-                    android:layout_marginEnd="123dp"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="18dp"
-                    android:text="Login" />
-            </LinearLayout>
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/pink_button"
+                android:text="Submit"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="667dp" />
         </LinearLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
