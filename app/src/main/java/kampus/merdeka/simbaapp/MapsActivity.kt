@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -58,7 +59,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
 
             location ->
             if (location != null){
-
+            Log.e("location",location.toString())
                 currentlocation = location
 
                 Toast.makeText(applicationContext, currentlocation.latitude.toString() + "" +

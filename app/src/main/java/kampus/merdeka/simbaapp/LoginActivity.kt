@@ -18,9 +18,11 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         btnIntent = findViewById(R.id.btn_Login)
         val btnIntentRegister = findViewById<TextView>(R.id.btn_register)
+        val btnIntentLupa = findViewById<TextView>(R.id.btn_lupapass)
 
         btnIntent.setOnClickListener (this)
         btnIntentRegister.setOnClickListener (this)
+        btnIntentLupa.setOnClickListener(this)
 
         }
 
@@ -36,6 +38,12 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_register -> run {
                 val intentRegister = Intent(this, RegisterActivity::class.java)
                 startActivity(intentRegister)
+            }
+        }
+        when (v.id){
+            R.id.btn_lupapass -> run {
+                val intentLupa = Intent(this, LupaPasswordActivity::class.java)
+                startActivity(intentLupa)
             }
         }
     }

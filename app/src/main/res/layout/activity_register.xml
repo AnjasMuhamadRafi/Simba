@@ -212,12 +212,12 @@
                 android:padding="16dp" />
 
             <Button
-                android:id="@+id/bt_register11"
+                android:id="@+id/btn_register11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/pink_button"
                 android:text="Register"
                 android:textColor="@color/white" />
