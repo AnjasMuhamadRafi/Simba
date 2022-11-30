@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.ChatFragment"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/pink_background">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,27 +17,44 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Daftar Posyandu"
-                android:layout_marginTop="11dp"
-                android:layout_marginStart="35dp"
-                android:gravity="center"
-                android:layout_marginEnd="35dp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
-                android:text="Jakarta Pusat, DKI Jakarta "/>
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:id="@+id/daftarpos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="35dp"
+                    android:gravity="center"
+                    android:text="Daftar Posyandu"
+                    android:fontFamily="@font/opensanssemibold"
+                    android:textSize="16dp"
+                    android:textColor="@color/primary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="38dp"
+                    android:textColor="@color/tulisan"
+                    android:text="Jakarta Pusat, DKI Jakarta "
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansregular"/>
+
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_posyandu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/item_chat" />
+                tools:listitem="@layout/item_chat"
+                android:layout_marginTop="20dp"/>
         </LinearLayout>
     </ScrollView>
 

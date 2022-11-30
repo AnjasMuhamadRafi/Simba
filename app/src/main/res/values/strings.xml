@@ -9,4 +9,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="artikel_imunisasi_kesehatan"><![CDATA[Artikel Imunisasi & Kesehatan]]></string>
     <string name="title_activity_maps">MapsActivity</string>
+    <!--    Dropdown List-->
+    <string-array name="description">
+        <item>Imunisasi Hepatitis B (HB-O)
+                Vaksin Hepatitis B untuk mencegah penyakit hepatitis B, yaitu penyakit pada organ hati yang dapat berlangsung beberapa minggu, bahkan seumur hidup. Vaksin hepatitis B yang diberikan saat lahir (HB0) adalah vaksin untuk mencegah penyakit hepatitis B. Jika masa ini terlewat atau tidak diberikan dalam waktu kurang dari 12 jam manfaat vaksin HB0 masih bisa didapatkan jika vaksin diberikan dalam 7 hari pertama kehidupan.</item>
+    </string-array>
 </resources>

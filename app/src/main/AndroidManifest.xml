@@ -17,24 +17,35 @@
         android:theme="@style/Theme.SimbaAPP"
         tools:targetApi="31">
         <activity
-            android:name=".BuatPasswordBaruActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".ChatBidanActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".BidanActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InputDataSelesaiActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BuatPasswordBaruActivity"
+            android:exported="false" />
         <activity
             android:name=".VerifikasiOTPActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".LupaPasswordActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -45,8 +56,11 @@
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity
+            android:name=".DataAnakActivity"
+            android:exported="false" />
+        <activity
             android:name=".InputDataAnak2Activity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".InputDataAnakActivity"
             android:exported="false">
@@ -69,9 +83,24 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InfoImunisasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JadwalImunisasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelActivity"
             android:exported="false" />
     </application>
 

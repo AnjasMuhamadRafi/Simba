@@ -6,25 +6,20 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class RegisterActivity : AppCompatActivity(), View.OnClickListener {
+class InputDataSelesaiActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnIntent: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
-        supportActionBar?.hide()
-
-        btnIntent = findViewById(R.id.btn_register11)
+        setContentView(R.layout.activity_input_data_selesai)
+        btnIntent = findViewById(R.id.btn_selesai)
 
         btnIntent.setOnClickListener(this)
-
-
     }
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btn_register11 -> run {
-                val intentBiasa = Intent(this, DataAnakActivity::class.java)
+            R.id.btn_selesai -> run {
+                val intentBiasa = Intent(this, HomeActivity::class.java)
                 startActivity(intentBiasa)
             }
         }

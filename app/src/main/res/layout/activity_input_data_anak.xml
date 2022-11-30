@@ -51,6 +51,40 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_namalkp" />
 
     <TextView
+        android:id="@+id/tv_jeniskelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:text="Jenis Kelamin"
+        android:fontFamily="@font/opensansregular"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_namalkp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_jeniskelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/white_button"
+        android:hint="jenis kelamin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jeniskelamin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
         android:id="@+id/tv_ttl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,7 +95,7 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_namalkp" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_jeniskelamin" />
 
     <EditText
         android:id="@+id/edit_ttl"
@@ -93,22 +127,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_ttl" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_pilihriwayat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginTop="3dp"
         android:background="@drawable/white_button"
-        android:padding="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Pilih riwayat"
+        android:hint="Belum Pernah"
+        app:layout_constraintTop_toBottomOf="@+id/tv_riwayatimunisasi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_riwayatimunisasi" />
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_field2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/bt_submit"

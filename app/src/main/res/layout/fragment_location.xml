@@ -1,10 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.LocationFragment">
 
    <include layout="@layout/activity_maps"/>
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardView"
+          android:layout_width="358dp"
+          android:layout_height="53dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="16dp"
+          app:cardBackgroundColor="@color/white"
+          app:cardCornerRadius="12dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/opensansregular"
+                android:hint="Posyandu Terdekat"
+                android:textColor="@color/primary"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="146dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/silang"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4" />
+         </androidx.constraintlayout.widget.ConstraintLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="119dp"
+          android:layout_height="48dp"
+          android:layout_marginStart="255dp"
+          android:layout_marginTop="545dp"
+          android:layout_marginEnd="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.77"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Lihat list"
+                android:textColor="@color/pink"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/list"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+      </androidx.cardview.widget.CardView>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent">
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="374dp"
+             android:layout_height="209dp"
+             android:layout_margin="10dp"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="12dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/textView291"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Posyandu Ria Kencana"
+                   android:textColor="@color/primary"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textView302"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="Jl. Prajurit KKO Usman dan Harun No.RT 28, RT.1/RW.5, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@+id/textView291"
+                   app:layout_constraintTop_toBottomOf="@+id/textView291" />
+
+               <TextView
+                   android:id="@+id/textView313"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="200 m"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintStart_toStartOf="@+id/textView302"
+                   app:layout_constraintTop_toBottomOf="@+id/textView302" />
+
+               <TextView
+                   android:id="@+id/textView324"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Buka"
+                   android:textColor="@color/green"
+                   app:layout_constraintStart_toStartOf="@+id/textView313"
+                   app:layout_constraintTop_toBottomOf="@+id/textView313" />
+
+               <View
+                   android:id="@+id/view5"
+                   android:layout_width="4dp"
+                   android:layout_height="4dp"
+                   android:layout_marginStart="10dp"
+                   android:background="@drawable/elips"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView324"
+                   app:layout_constraintStart_toEndOf="@+id/textView324"
+                   app:layout_constraintTop_toBottomOf="@+id/textView313"
+                   app:layout_constraintVertical_bias="0.76" />
+
+               <TextView
+                   android:id="@+id/textView336"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="Tutup pukul 16.00"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView324"
+                   app:layout_constraintStart_toEndOf="@+id/view5" />
+
+               <Button
+                   android:id="@+id/button6"
+                   android:layout_width="68dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:background="@drawable/pink_button"
+                   android:drawableLeft="@drawable/rute"
+                   android:paddingStart="8dp"
+                   android:text="Rute"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="14dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView324" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="374dp"
+             android:layout_height="209dp"
+             android:layout_margin="10dp"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="12dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/textView2911"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Posyandu Anggrek"
+                   android:textColor="@color/primary"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textView3022"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="RT.004-RW.09,, Jl. H. Baping, RT.4/RW.9, Ciracas, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13740"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@+id/textView2911"
+                   app:layout_constraintTop_toBottomOf="@+id/textView2911" />
+
+               <TextView
+                   android:id="@+id/textView3155"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="820 m "
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintStart_toStartOf="@+id/textView3022"
+                   app:layout_constraintTop_toBottomOf="@+id/textView3022" />
+
+               <TextView
+                   android:id="@+id/textView3233"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Tutup"
+                   android:textColor="@color/red"
+                   app:layout_constraintStart_toStartOf="@+id/textView3155"
+                   app:layout_constraintTop_toBottomOf="@+id/textView3155" />
+
+               <View
+                   android:id="@+id/view44"
+                   android:layout_width="4dp"
+                   android:layout_height="4dp"
+                   android:layout_marginStart="10dp"
+                   android:background="@drawable/elips"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView3233"
+                   app:layout_constraintStart_toEndOf="@+id/textView3233"
+                   app:layout_constraintTop_toBottomOf="@+id/textView3155"
+                   app:layout_constraintVertical_bias="0.76" />
+
+               <TextView
+                   android:id="@+id/textView3366"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="Buka pukul 10.00"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView3233"
+                   app:layout_constraintStart_toEndOf="@+id/view44" />
+
+               <Button
+                   android:id="@+id/button5"
+                   android:layout_width="68dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:background="@drawable/pink_button"
+                   android:drawableLeft="@drawable/rute"
+                   android:paddingStart="8dp"
+                   android:text="Rute"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="14dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView3233" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="374dp"
+             android:layout_height="209dp"
+             android:layout_margin="10dp"
+             app:cardBackgroundColor="@color/white"
+             app:cardCornerRadius="12dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/textView29"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Posyandu Kebon Jeruk"
+                   android:textColor="@color/primary"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textView30"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="Jl. Perumahan Kb. Jeruk Baru No.A. 7, RT.12/RW.3, Kebon Jeruk, Kebonjeruk, West Jakarta City, Jakarta 11530"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="@+id/textView29"
+                   app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+               <TextView
+                   android:id="@+id/textView31"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="1.5 km"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintStart_toStartOf="@+id/textView30"
+                   app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+               <TextView
+                   android:id="@+id/textView32"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Buka"
+                   android:textColor="@color/green"
+                   app:layout_constraintStart_toStartOf="@+id/textView31"
+                   app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+               <View
+                   android:id="@+id/view"
+                   android:layout_width="4dp"
+                   android:layout_height="4dp"
+                   android:layout_marginStart="10dp"
+                   android:background="@drawable/elips"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                   app:layout_constraintStart_toEndOf="@+id/textView32"
+                   app:layout_constraintTop_toBottomOf="@+id/textView31"
+                   app:layout_constraintVertical_bias="0.76" />
+
+               <TextView
+                   android:id="@+id/textView33"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp"
+                   android:fontFamily="@font/opensansregular"
+                   android:text="Tutup pukul 15.30"
+                   android:textColor="@color/slate_400"
+                   android:textSize="12dp"
+                   app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                   app:layout_constraintStart_toEndOf="@+id/view" />
+
+               <Button
+                   android:id="@+id/button7"
+                   android:layout_width="68dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="16dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:background="@drawable/pink_button"
+                   android:drawableLeft="@drawable/rute"
+                   android:paddingStart="8dp"
+                   android:text="Rute"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="14dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+         </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+
+
+   </HorizontalScrollView>
 
 </FrameLayout>

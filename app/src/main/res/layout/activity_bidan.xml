@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_background"
+    tools:context=".BidanActivity"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_artikel"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="77dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Posyandu Ria Kencana"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/opensanssemibold"
+                        android:textSize="16dp"
+                        android:textColor="@color/primary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensansregular"
+                        android:text="Jam Operasional :"
+                        android:textColor="@color/tulisan"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="08.00 - 16.00"
+                        android:textColor="@color/tulisan"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView35"
+                        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bidan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="72dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/elips" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Nama Bidan 1"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView17"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Shift :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView39"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Status :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView40"
+                            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="08.00 - 11.00"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView40"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Online"
+                            android:textColor="@color/green"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView42"
+                            app:layout_constraintTop_toTopOf="@+id/textView42" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView171"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/elips" />
+
+                        <TextView
+                            android:id="@+id/textView392"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Nama Bidan 2"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView171"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView403"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Shift :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView392"
+                            app:layout_constraintTop_toBottomOf="@+id/textView392" />
+
+                        <TextView
+                            android:id="@+id/textView424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Status :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView403"
+                            app:layout_constraintTop_toBottomOf="@+id/textView403" />
+
+                        <TextView
+                            android:id="@+id/textView434"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="08.00 - 11.00"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView403"
+                            app:layout_constraintTop_toBottomOf="@+id/textView392" />
+
+                        <TextView
+                            android:id="@+id/textView445"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Online"
+                            android:textColor="@color/green"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView424"
+                            app:layout_constraintTop_toTopOf="@+id/textView424" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView17111"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/elips" />
+
+                        <TextView
+                            android:id="@+id/textView39222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Nama Bidan 3"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView17111"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView40333"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Shift :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView39222"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39222" />
+
+                        <TextView
+                            android:id="@+id/textView42444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Status :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView40333"
+                            app:layout_constraintTop_toBottomOf="@+id/textView40333" />
+
+                        <TextView
+                            android:id="@+id/textView43555"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="13.00 - 16.00"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView40333"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39222" />
+
+                        <TextView
+                            android:id="@+id/textView44666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Offline"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView42444"
+                            app:layout_constraintTop_toTopOf="@+id/textView42444" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView1711"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/elips" />
+
+                        <TextView
+                            android:id="@+id/textView3922"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Nama Bidan 4"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView1711"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView4033"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Shift :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView3922"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3922" />
+
+                        <TextView
+                            android:id="@+id/textView4244"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Status :"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView4033"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4033" />
+
+                        <TextView
+                            android:id="@+id/textView4355"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="13.00 - 16.00"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView4033"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3922" />
+
+                        <TextView
+                            android:id="@+id/textView4466"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Offline"
+                            android:textColor="@color/tulisan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView4244"
+                            app:layout_constraintTop_toTopOf="@+id/textView4244" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

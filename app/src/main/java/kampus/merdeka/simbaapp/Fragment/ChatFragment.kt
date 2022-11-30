@@ -1,6 +1,8 @@
 package kampus.merdeka.simbaapp.Fragment
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kampus.merdeka.simbaapp.Adapter.PosyanduAdapter
+import kampus.merdeka.simbaapp.BidanActivity
 import kampus.merdeka.simbaapp.R
 import kampus.merdeka.simbaapp.databinding.FragmentChatBinding
 import kampus.merdeka.simbaapp.model.ModelPosyandu
@@ -43,6 +46,9 @@ class ChatFragment : Fragment() {
 
         return view
     }
+
+
+
     val ArrayPosyandu : ArrayList<ModelPosyandu>get(){
 
         val arrayposyandu= ArrayList<ModelPosyandu>()
@@ -77,5 +83,14 @@ class ChatFragment : Fragment() {
         super.onDestroyView()
         binding = null
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        val rvposyandu : RecyclerView = view.findViewById(R.id.rv_posyandu)
+        rvposyandu.setOnClickListener {
+            Log.e("item clik","1")
+            val rvpos = Intent(this@ChatFragment.activity, BidanActivity::class.java)
+            startActivity(rvpos)
+        }
+    }
 }
